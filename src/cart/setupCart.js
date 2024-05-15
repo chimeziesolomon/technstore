@@ -3,10 +3,10 @@ import {
     setStorageItem,
     formatPrice,
     getElement,
-} from '../utils'
-import { openCart } from './toggleCart'
-import { findProduct } from '../store'
-import addToCartDOM from './addToCartDOM'
+} from '../utils.js'
+import { openCart } from './toggleCart.js'
+import { findProduct } from '../store.js'
+import addToCartDOM from './addToCartDOM.js'
 
 // set items
 const cartItemCountDOM = getElement('.cart-item-count')
@@ -49,7 +49,7 @@ function displayCartItemCount() {
     cartItemCountDOM.textContent = amount
 }
 function displayCartTotal() {
-    let total = cart.reeduce((total, cartItem) => {
+    let total = cart.reduce((total, cartItem) => {
         return (total += cartItem.price * cartItem.amount)
     }, 0)
     cartTotalDOM.textContent = `Total : ${formatPrice(total)} `

@@ -1,4 +1,4 @@
-import { getStorageItem, setStorageItem } from './utils'
+import { getStorageItem, setStorageItem } from './utils.js'
 let store = getStorageItem('store')
 const setupStore = (products) => {
     store = products.map((product) => {

@@ -1,5 +1,5 @@
-import { formatPrice } from './utils'
-import { addToCart } from './cart/setupCart'
+import { formatPrice } from './utils.js'
+import { addToCart } from './cart/setupCart.js'
 const display = (products, element, filter) => {
     //display product
     element.innerHTML = products.map((product) => {

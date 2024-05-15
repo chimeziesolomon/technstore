@@ -1,3 +1,3 @@
-import '../toggleSidebar'
-import '../cart/toggleCart'
-import '../cart/setupCart'
+import '../toggleSidebar.js'
+import '../cart/toggleCart.js'
+import '../cart/setupCart.js'

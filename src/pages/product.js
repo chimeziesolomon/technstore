@@ -1,9 +1,9 @@
-import '../toggleSidebar'
-import '../cart/toggleCart'
-import '../cart/setupCart'
+import '../toggleSidebar.js'
+import '../cart/toggleCart.js'
+import '../cart/setupCart.js'
 
-import { addToCart } from '../cart/setupCart'
-import { singleProductUrl, getElement, formatPrice } from '../utils'
+import { addToCart } from '../cart/setupCart.js'
+import { singleProductUrl, getElement, formatPrice } from '../utils.js'
 
 //selections
 
